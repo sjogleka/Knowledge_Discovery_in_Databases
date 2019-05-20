@@ -1,0 +1,139 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     fsi-2015_csv
+Instances:    178
+Attributes:   22
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Life expectancy at birth (years)
+              Total unemployment rate (% of labour force)
+              Education Index
+              Homeless People due to Natural Disaster
+              GTI
+              Prison Population
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:24/24 (178)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class Alert :
+-112.1 + 
+[ï»¿Country=Burundi] * -1.19 +
+[C1: Security Apparatus] * 1.28 +
+[E1: Economy] * 2.92 +
+[P1: State Legitimacy] * 0.51 +
+[P2: Public Services] * 2.13 +
+[S2: Refugees and IDPs] * 5.63 +
+[X1: External Intervention] * 0.62 +
+[Education Index] * 2.66
+
+Class Stable :
+12.86 + 
+[ï»¿Country=Albania] * 1.97 +
+[ï»¿Country=Bahrain] * -0.96 +
+[ï»¿Country=Belize] * 2.34 +
+[ï»¿Country=Botswana] * 2.32 +
+[ï»¿Country=Brunei Darussalam] * 1.14 +
+[ï»¿Country=Bulgaria] * 1.43 +
+[ï»¿Country=Cuba] * 2.31 +
+[ï»¿Country=Moldova] * 2.23 +
+[ï»¿Country=Samoa] * 2    +
+[ï»¿Country=Seychelles] * 0.99 +
+[ï»¿Country=Singapore] * -2.29 +
+[Rank=132nd] * 1.79 +
+[C3: Group Grievance] * -0.46 +
+[E1: Economy] * -0.61 +
+[E3: Human Flight and Brain Drain] * -0.16 +
+[P2: Public Services] * -0.31 +
+[S2: Refugees and IDPs] * -0.72 +
+[Life expectancy at birth (years)] * -0.34
+
+Class Warning :
+-14.05 + 
+[ï»¿Country=Albania] * -1.97 +
+[ï»¿Country=Bahrain] * 2.12 +
+[ï»¿Country=Belize] * -2.25 +
+[ï»¿Country=Botswana] * -2.26 +
+[ï»¿Country=Brunei Darussalam] * -1.03 +
+[ï»¿Country=Croatia] * 3.17 +
+[ï»¿Country=Cuba] * -2.27 +
+[ï»¿Country=Grenada] * 1.35 +
+[ï»¿Country=Malaysia] * -2.04 +
+[ï»¿Country=Moldova] * -2.28 +
+[ï»¿Country=Samoa] * -1.94 +
+[C1: Security Apparatus] * 0.14 +
+[C2: Factionalized Elites] * 0.38 +
+[C3: Group Grievance] * 0.17 +
+[E2: Economic Inequality] * 0.15 +
+[E3: Human Flight and Brain Drain] * 0.57 +
+[P1: State Legitimacy] * 0.4  +
+[Life expectancy at birth (years)] * 0.54
+
+Class Sustainable :
+30.66 + 
+[ï»¿Country=France] * -2.59 +
+[ï»¿Country=United Kingdom] * 1.13 +
+[ï»¿Country=United States] * -1.37 +
+[C1: Security Apparatus] * -1.2 +
+[C3: Group Grievance] * -1.66 +
+[E2: Economic Inequality] * -0.56 +
+[P1: State Legitimacy] * -3.05 +
+[P2: Public Services] * -0.43 +
+[S2: Refugees and IDPs] * -2.05 +
+[X1: External Intervention] * -0.4 +
+[Total unemployment rate (% of labour force)] * -0.44
+
+
+Time taken to build model: 3.69 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         154               86.5169 %
+Incorrectly Classified Instances        24               13.4831 %
+Kappa statistic                          0.7606
+Mean absolute error                      0.0753
+Root mean squared error                  0.224 
+Relative absolute error                 25.7108 %
+Root relative squared error             58.7501 %
+Total Number of Instances              178     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.727    0.006    0.889      0.727    0.800      0.793    0.985     0.903     Alert
+                 0.732    0.066    0.769      0.732    0.750      0.678    0.940     0.750     Stable
+                 0.952    0.164    0.893      0.952    0.922      0.802    0.964     0.959     Warning
+                 0.762    0.013    0.889      0.762    0.821      0.802    0.979     0.899     Sustainable
+Weighted Avg.    0.865    0.114    0.864      0.865    0.863      0.773    0.962     0.900     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   8   0   3   0 |   a = Alert
+   0  30   9   2 |   b = Stable
+   1   4 100   0 |   c = Warning
+   0   5   0  16 |   d = Sustainable
+

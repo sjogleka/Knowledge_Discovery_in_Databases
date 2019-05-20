@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.HoeffdingTree -L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0
+Relation:     fsi-2016_csv_without_features
+Instances:    178
+Attributes:   16
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+warning (88.000) NB1 NB adaptive1
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         168               94.382  %
+Incorrectly Classified Instances        10                5.618  %
+Kappa statistic                          0.9143
+Mean absolute error                      0.0322
+Root mean squared error                  0.1567
+Relative absolute error                  9.6729 %
+Root relative squared error             38.4317 %
+Total Number of Instances              178     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.842    0.014    0.941      0.842    0.889      0.863    0.991     0.971     Alert
+                 0.977    0.077    0.924      0.977    0.950      0.900    0.990     0.989     warning
+                 0.973    0.007    0.973      0.973    0.973      0.966    0.997     0.987     stable
+                 0.938    0.000    1.000      0.938    0.968      0.965    0.999     0.990     sustainable
+Weighted Avg.    0.944    0.042    0.945      0.944    0.943      0.912    0.992     0.985     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 32  6  0  0 |  a = Alert
+  2 85  0  0 |  b = warning
+  0  1 36  0 |  c = stable
+  0  0  1 15 |  d = sustainable
+

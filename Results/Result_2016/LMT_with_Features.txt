@@ -1,0 +1,135 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     fsi-2016_csv
+Instances:    178
+Attributes:   22
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Life expectancy at birth (years)
+              Total unemployment rate (% of labour force)
+              Education Index
+              Homeless People due to Natural Disaster
+              GTI
+              Prison Population
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:28/28 (178)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class Alert :
+-63.71 + 
+[C2: Factionalized Elites] * 0.73 +
+[C3: Group Grievance] * 1.83 +
+[E1: Economy] * 1.81 +
+[P1: State Legitimacy] * 0.62 +
+[P2: Public Services] * 2.5  +
+[S1: Demographic Pressures] * 0.24 +
+[S2: Refugees and IDPs] * 1.03
+
+Class warning :
+-11.42 + 
+[ï»¿Country=Angola] * -1.77 +
+[ï»¿Country=Bangladesh] * -2.24 +
+[ï»¿Country=Botswana] * 0.92 +
+[ï»¿Country=Bulgaria] * -1.06 +
+[ï»¿Country=Djibouti] * 2.38 +
+[ï»¿Country=Egypt] * -2.14 +
+[ï»¿Country=Kazakhstan] * 0.95 +
+[ï»¿Country=Kuwait] * -1.08 +
+[ï»¿Country=Lebanon] * 3.19 +
+[ï»¿Country=Mongolia] * -1.18 +
+[ï»¿Country=Panama] * -1.16 +
+[ï»¿Country=Rwanda] * -1.95 +
+[ï»¿Country=Trinidad and Tobago] * -1.04 +
+[C2: Factionalized Elites] * 0.2  +
+[E2: Economic Inequality] * 0.39 +
+[E3: Human Flight and Brain Drain] * 0.6  +
+[P1: State Legitimacy] * 0.12 +
+[Life expectancy at birth (years)] * 0.41 +
+[Education Index] * 0.14 +
+[GTI] * 0.07
+
+Class stable :
+18.19 + 
+[ï»¿Country=Antigua and Barbuda] * 1.77 +
+[ï»¿Country=Botswana] * -1.24 +
+[ï»¿Country=Bulgaria] * 1.1  +
+[ï»¿Country=Croatia] * 2.26 +
+[ï»¿Country=Kuwait] * 1.53 +
+[ï»¿Country=Trinidad and Tobago] * 3.42 +
+[Rank=137th] * 1.32 +
+[C1: Security Apparatus] * -0.87 +
+[C2: Factionalized Elites] * -0.61 +
+[C3: Group Grievance] * -0.2 +
+[E2: Economic Inequality] * -0.49 +
+[E3: Human Flight and Brain Drain] * -0.3 +
+[P2: Public Services] * -0.17 +
+[P3: Human Rights] * -0.16 +
+[S2: Refugees and IDPs] * -0.19 +
+[X1: External Intervention] * -0.13 +
+[Life expectancy at birth (years)] * -0.53
+
+Class sustainable :
+49.82 + 
+[C1: Security Apparatus] * -2.68 +
+[C3: Group Grievance] * -1.29 +
+[E2: Economic Inequality] * -3.5 +
+[E3: Human Flight and Brain Drain] * -1.8 +
+[P1: State Legitimacy] * -2.59 +
+[P3: Human Rights] * -2.89 +
+[S1: Demographic Pressures] * -3.23
+
+
+Time taken to build model: 4.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         166               93.2584 %
+Incorrectly Classified Instances        12                6.7416 %
+Kappa statistic                          0.8973
+Mean absolute error                      0.0525
+Root mean squared error                  0.1739
+Relative absolute error                 15.7539 %
+Root relative squared error             42.6588 %
+Total Number of Instances              178     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.895    0.007    0.971      0.895    0.932      0.915    0.994     0.978     Alert
+                 0.977    0.088    0.914      0.977    0.944      0.890    0.984     0.983     warning
+                 0.838    0.007    0.969      0.838    0.899      0.878    0.977     0.955     stable
+                 1.000    0.012    0.889      1.000    0.941      0.937    0.995     0.945     sustainable
+Weighted Avg.    0.933    0.047    0.935      0.933    0.932      0.897    0.986     0.973     
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 34  4  0  0 |  a = Alert
+  1 85  1  0 |  b = warning
+  0  4 31  2 |  c = stable
+  0  0  0 16 |  d = sustainable
+

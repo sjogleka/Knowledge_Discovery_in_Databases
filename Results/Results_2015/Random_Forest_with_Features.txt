@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     fsi-2015_csv
+Instances:    178
+Attributes:   22
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+              Life expectancy at birth (years)
+              Total unemployment rate (% of labour force)
+              Education Index
+              Homeless People due to Natural Disaster
+              GTI
+              Prison Population
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         138               77.5281 %
+Incorrectly Classified Instances        40               22.4719 %
+Kappa statistic                          0.5509
+Mean absolute error                      0.218 
+Root mean squared error                  0.2989
+Relative absolute error                 74.4676 %
+Root relative squared error             78.3793 %
+Total Number of Instances              178     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.990     0.918     Alert
+                 0.463    0.044    0.760      0.463    0.576      0.509    0.924     0.799     Stable
+                 1.000    0.452    0.761      1.000    0.864      0.646    0.947     0.954     Warning
+                 0.667    0.006    0.933      0.667    0.778      0.767    0.994     0.945     Sustainable
+Weighted Avg.    0.775    0.278    ?          0.775    ?          ?        0.950     0.915     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   0   0  11   0 |   a = Alert
+   0  19  21   1 |   b = Stable
+   0   0 105   0 |   c = Warning
+   0   6   1  14 |   d = Sustainable
+

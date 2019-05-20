@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     fsi-2015_csv_without_features
+Instances:    178
+Attributes:   16
+              ï»¿Country
+              Year
+              Rank
+              Total
+              C1: Security Apparatus
+              C2: Factionalized Elites
+              C3: Group Grievance
+              E1: Economy
+              E2: Economic Inequality
+              E3: Human Flight and Brain Drain
+              P1: State Legitimacy
+              P2: Public Services
+              P3: Human Rights
+              S1: Demographic Pressures
+              S2: Refugees and IDPs
+              X1: External Intervention
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:21/21 (178)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class Alert :
+-106.18 + 
+[C1: Security Apparatus] * 0.84 +
+[C2: Factionalized Elites] * 0.69 +
+[E1: Economy] * 2.28 +
+[P1: State Legitimacy] * 0.56 +
+[P2: Public Services] * 2.58 +
+[S2: Refugees and IDPs] * 4.9  +
+[X1: External Intervention] * 0.63
+
+Class Stable :
+9.75 + 
+[ï»¿Country=Bahrain] * -1.11 +
+[ï»¿Country=Botswana] * 2.3  +
+[ï»¿Country=Brazil] * 1.34 +
+[ï»¿Country=Bulgaria] * 1.2  +
+[ï»¿Country=Malaysia] * 2.28 +
+[ï»¿Country=Moldova] * 2.31 +
+[ï»¿Country=Samoa] * 1.67 +
+[ï»¿Country=Singapore] * -2.3 +
+[Rank=132nd] * 1.79 +
+[C1: Security Apparatus] * -0.18 +
+[C3: Group Grievance] * -0.19 +
+[E1: Economy] * -0.58 +
+[P2: Public Services] * -0.39 +
+[S2: Refugees and IDPs] * -0.86
+
+Class Warning :
+-9.28 + 
+[ï»¿Country=Albania] * -1.12 +
+[ï»¿Country=Bahrain] * 3.3  +
+[ï»¿Country=Belize] * -1.97 +
+[ï»¿Country=Botswana] * -2.2 +
+[ï»¿Country=Croatia] * 2.29 +
+[ï»¿Country=Cuba] * -2.28 +
+[ï»¿Country=Grenada] * 2.55 +
+[ï»¿Country=Jamaica] * 1.39 +
+[ï»¿Country=Moldova] * -2.27 +
+[ï»¿Country=Somalia] * -2.28 +
+[C2: Factionalized Elites] * 0.38 +
+[C3: Group Grievance] * 0.3  +
+[E1: Economy] * 0.17 +
+[E2: Economic Inequality] * 0.35 +
+[E3: Human Flight and Brain Drain] * 0.19 +
+[P1: State Legitimacy] * 0.13 +
+[P2: Public Services] * 0.12
+
+Class Sustainable :
+26.79 + 
+[ï»¿Country=France] * -1.26 +
+[ï»¿Country=Slovenia] * 1.16 +
+[ï»¿Country=United Kingdom] * 2.59 +
+[C1: Security Apparatus] * -1.91 +
+[C3: Group Grievance] * -1.83 +
+[P1: State Legitimacy] * -2.57 +
+[P2: Public Services] * -0.48 +
+[S2: Refugees and IDPs] * -1.27 +
+[X1: External Intervention] * -0.4
+
+
+Time taken to build model: 3.58 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         156               87.6404 %
+Incorrectly Classified Instances        22               12.3596 %
+Kappa statistic                          0.78  
+Mean absolute error                      0.0737
+Root mean squared error                  0.2166
+Relative absolute error                 25.1908 %
+Root relative squared error             56.8026 %
+Total Number of Instances              178     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.818    0.000    1.000      0.818    0.900      0.899    0.986     0.937     Alert
+                 0.707    0.058    0.784      0.707    0.744      0.673    0.940     0.772     Stable
+                 0.962    0.164    0.894      0.962    0.927      0.815    0.967     0.966     Warning
+                 0.810    0.013    0.895      0.810    0.850      0.832    0.983     0.892     Sustainable
+Weighted Avg.    0.876    0.112    0.875      0.876    0.874      0.789    0.964     0.911     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+   9   0   2   0 |   a = Alert
+   0  29  10   2 |   b = Stable
+   0   4 101   0 |   c = Warning
+   0   4   0  17 |   d = Sustainable
+

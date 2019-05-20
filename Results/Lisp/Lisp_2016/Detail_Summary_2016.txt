@@ -1,0 +1,200 @@
+
+*** Hypothesis ID: 590
+
+	Antecedent
+		  Year_	2016
+	Variable antecedent Before
+		  P2__Public_Services	8.2
+	Variable antecedent After
+		  P2__Public_Services	9.2
+
+	Succedent	(empty)
+	Variable succedent Before
+		  Total	Alert
+	Variable succedent After
+		  Total	warning
+
+Quantifiers values:
+	a-frequency	3	3	a-frequency (BASE) from source contingency table
+	a-frequency	2	2	a-frequency (BASE) from source contingency table
+
+Various interest measures from the four-fold tables:
+	D%-Sum	0.62	0.62	Sum of differences of relative frequencies between state before and after
+	Df-Conf	0.71	0.7142857143	Difference of values of Confidence
+	Df-AFUI	0.06	0.057208238	Difference of values of D-Confidence
+	Df-FUE	0.31	0.308988764	Difference of values of E-Confidence
+	Df-Avg	4.1	4.0996456659	Difference of values of Average Difference
+	R-Conf	3.5	3.5	Ratio of values of Confidence
+	R-DFUI	3.63	3.6315789474	Ratio of values of D-Confidence
+	R-FUE	1.63	1.625	Ratio of values of E-Confidence
+	R-Avg	-8.87	-8.8683170377	Ratio of values of Average Difference
+	H-Conf	3.5	3.5	Higher of ratios of values of Confidence
+	H-DFUI	3.63	3.6315789474	Higher of ratios of values of D-Confidence
+	H-FUE	1.63	1.625	Higher of ratios of values of E-Confidence
+	H-Avg	-0.11	-0.1127609665	Higher of ratios of values of Average Difference
+
+Values from STATE BEFORE:
+	a	3	3	a-frequency from the contingency table
+	b	0	0	b-frequency from the contingency table
+	c	35	35	c-frequency from the contingency table
+	d	140	140	d-frequency from the contingency table
+	r	3	3	r-frequency (a+b) from the contingency table
+	n	178	178	n-frequency (a+b+c+d) from the contingency table
+	Conf	1	1	Confidence (validity): a/(a+b)
+	DConf	0.08	0.0789473684	D-Confidence: a/(a+b+c)
+	EConf	0.8	0.8033707865	E-Confidence: (a+d)/(a+b+c+d)
+	Supp	0.02	0.0168539326	Support: a/(a+b+c+d)
+	Cmplt	0.08	0.0789473684	Completeness: a/(a+c)
+	AvgDf	3.68	3.6842105263	Average difference: a*(a+b+c+d)/((a+b)*(a+c))- 1 in <-1;inf)
+	Lift	4.68	4.6842105263	Lift measure: (a/(a+b))/((a+c)/(a+b+c+d)) = AvgDf+ 1
+	LBound	0.73	0.729	Lower bound implication (p=0.9)
+	UBound	1	1	Upper bound implication (p=0.9)
+	ELBound	1	0.9999660815	Lower bound equivalence (p=0.9)
+	EUBound	0	0.0000787248	Upper bound equivalence (p=0.9)
+	DLBound	1	1	Lower bound double implication (p=0.9)
+	DUBound	0	0	Upper bound double implication (p=0.9)
+	Fisher	0.01	0.0091281314	Fisher test
+	Chi-Sq	11.24	11.2421052632	Chi-square test
+	PSep	10.67	10.6666666667	Paraconsistent separation index of ((b+c)/a)-1
+	bMean	0.8	0.8	Bayesian Mean
+	bVAR	0.8	0.8	Bayesian Variance
+	bStDev	0.16	0.1632993162	Bayesian std. deviation
+	P(>=90%)	0.34	0.3439000019	Bayesian Beta PDF integral (p=0.9)
+	P(>=95%)	0.19	0.1854937502	Bayesian Beta PDF integral (p=0.95)
+
+Values from STATE AFTER:
+	a	2	2	a-frequency from the contingency table
+	b	5	5	b-frequency from the contingency table
+	c	85	85	c-frequency from the contingency table
+	d	86	86	d-frequency from the contingency table
+	r	7	7	r-frequency (a+b) from the contingency table
+	n	178	178	n-frequency (a+b+c+d) from the contingency table
+	Conf	0.29	0.2857142857	Confidence (validity): a/(a+b)
+	DConf	0.02	0.0217391304	D-Confidence: a/(a+b+c)
+	EConf	0.49	0.4943820225	E-Confidence: (a+d)/(a+b+c+d)
+	Supp	0.01	0.0112359551	Support: a/(a+b+c+d)
+	Cmplt	0.02	0.0229885057	Completeness: a/(a+c)
+	AvgDf	-0.42	-0.4154351396	Average difference: a*(a+b+c+d)/((a+b)*(a+c))- 1 in <-1;inf)
+	Lift	0.58	0.5845648604	Lift measure: (a/(a+b))/((a+c)/(a+b+c+d)) = AvgDf+ 1
+	LBound	1	0.9999936	Lower bound implication (p=0.9)
+	UBound	0	0.0001765	Upper bound implication (p=0.9)
+	ELBound	1	1	Lower bound equivalence (p=0.9)
+	EUBound	0	0	Upper bound equivalence (p=0.9)
+	DLBound	1	1	Lower bound double implication (p=0.9)
+	DUBound	0	0	Upper bound double implication (p=0.9)
+	Fisher	0.93	0.9337072597	Fisher test
+	Chi-Sq	1.2	1.2022817348	Chi-square test
+	PSep	44	44	Paraconsistent separation index of ((b+c)/a)-1
+	bMean	0.33	0.3333333333	Bayesian Mean
+	bVAR	0.33	0.3333333333	Bayesian Variance
+	bStDev	0.15	0.1490711985	Bayesian std. deviation
+	P(>=90%)	0	0.0000234101	Bayesian Beta PDF integral (p=0.9)
+	P(>=95%)	0	0.0000004008	Bayesian Beta PDF integral (p=0.95)
+
+----------------------------------------------------------
+Differences of absolute frequencies
+
+Contingency table
+		Succedent	NOT Succedent
+	Antecedent	1	5	6
+	NOT Antecedent	50	54	104
+		51	59	110
+
+Row percentage
+		Succedent	NOT Succedent
+	Antecedent	16.67	83.33	100.00
+	NOT Antecedent	48.08	51.92	100.00
+		46.36	53.64	100.00
+
+Column percentage
+		Succedent	NOT Succedent
+	Antecedent	1.96	8.47	5.45
+	NOT Antecedent	98.04	91.53	94.55
+		100.00	100.00	100.00
+
+Total percentage
+		Succedent	NOT Succedent
+	Antecedent	0.91	4.55	5.45
+	NOT Antecedent	45.45	49.09	94.55
+		46.36	53.64	100.00
+
+----------------------------------------------------------
+Differences of relative frequencies
+
+Contingency table
+		Succedent	NOT Succedent
+	Antecedent	1	3	4
+	NOT Antecedent	28	30	58
+		29	33	62
+
+Row percentage
+		Succedent	NOT Succedent
+	Antecedent	25.00	75.00	100.00
+	NOT Antecedent	48.28	51.72	100.00
+		46.77	53.23	100.00
+
+Column percentage
+		Succedent	NOT Succedent
+	Antecedent	3.45	9.09	6.45
+	NOT Antecedent	96.55	90.91	93.55
+		100.00	100.00	100.00
+
+Total percentage
+		Succedent	NOT Succedent
+	Antecedent	1.61	4.84	6.45
+	NOT Antecedent	45.16	48.39	93.55
+		46.77	53.23	100.00
+
+----------------------------------------------------------
+State Before Summary
+
+Contingency table
+		Succedent	NOT Succedent
+	Antecedent	3	0	3
+	NOT Antecedent	35	140	175
+		38	140	178
+
+Row percentage
+		Succedent	NOT Succedent
+	Antecedent	100.00	0.00	100.00
+	NOT Antecedent	20.00	80.00	100.00
+		21.35	78.65	100.00
+
+Column percentage
+		Succedent	NOT Succedent
+	Antecedent	7.89	0.00	1.69
+	NOT Antecedent	92.11	100.00	98.31
+		100.00	100.00	100.00
+
+Total percentage
+		Succedent	NOT Succedent
+	Antecedent	1.69	0.00	1.69
+	NOT Antecedent	19.66	78.65	98.31
+		21.35	78.65	100.00
+
+----------------------------------------------------------
+State After Summary
+
+Contingency table
+		Succedent	NOT Succedent
+	Antecedent	2	5	7
+	NOT Antecedent	85	86	171
+		87	91	178
+
+Row percentage
+		Succedent	NOT Succedent
+	Antecedent	28.57	71.43	100.00
+	NOT Antecedent	49.71	50.29	100.00
+		48.88	51.12	100.00
+
+Column percentage
+		Succedent	NOT Succedent
+	Antecedent	2.30	5.49	3.93
+	NOT Antecedent	97.70	94.51	96.07
+		100.00	100.00	100.00
+
+Total percentage
+		Succedent	NOT Succedent
+	Antecedent	1.12	2.81	3.93
+	NOT Antecedent	47.75	48.31	96.07
+		48.88	51.12	100.00
